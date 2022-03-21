@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +6,7 @@
 }
 html {
   font-size: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   scroll-behavior: initial;
 }
 main {
@@ -164,7 +164,7 @@ p {
 }
 #header .hamburger:after {
   position: absolute;
-  content: "";
+  content: '';
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -180,7 +180,7 @@ p {
 }
 #header .hamburger .bar::after,
 #header .hamburger .bar::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 100%;
   width: 100%;
@@ -205,14 +205,14 @@ p {
 
 /* Hero Section */
 #hero {
-  background-image: url(./img/Me.jpg);
+  background-image: url(./img/pc-write.jpeg);
   background-size: cover;
   background-position: center top;
   position: relative;
   z-index: 1;
 }
 #hero::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -311,7 +311,7 @@ p {
   border: 10px solid white;
 }
 #about .col-left .about-img::after {
-  content: "";
+  content: '';
   position: absolute;
   left: -33px;
   top: 19px;
@@ -429,7 +429,7 @@ button:focus {
   background-size: cover;
 }
 #services .service-item::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -456,8 +456,16 @@ button:focus {
   text-align: left;
   font-weight: 500;
 }
-#services p{
+#services p {
   font-weight: 500;
+}
+#services .service-small {
+  padding: 8px;
+  border: solid 2px black;
+  margin: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 /* End Services Section */
 
@@ -511,13 +519,14 @@ button:focus {
 
 #projects .project-img {
   flex-basis: 50%;
-  height: 300px;
+  /* height: 300px; */
   overflow: hidden;
   position: relative;
+  object-fit: fi;
 }
 
 #projects .project-img:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -572,7 +581,6 @@ button:focus {
   font-size: 1.4rem;
   line-height: 2rem;
   font-weight: 500;
-  
 }
 /*End contact Section */
 
@@ -826,7 +834,7 @@ button:focus {
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
   /* header */
-  
+
   #header .hamburger {
     display: none;
   }
