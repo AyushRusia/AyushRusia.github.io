@@ -461,11 +461,12 @@ button:focus {
 }
 #services .service-small {
   padding: 8px;
-  border: solid 2px black;
+  border: solid 2px crimson;
+
   margin: 5px;
   position: relative;
   z-index: 1;
-  overflow: hidden;
+  font-size: medium;
 }
 /* End Services Section */
 
@@ -524,7 +525,7 @@ button:focus {
   position: relative;
 }
 #projects .project-img div img {
-  object-fit: contain;
+  object-fit: cover;
 }
 #projects .project-img:after {
   content: '';
@@ -537,6 +538,7 @@ button:focus {
   opacity: 0.5;
 }
 #projects .project-img img {
+  object-fit: cover;
   transition: 0.3s ease transform;
 }
 #projects .project-item:hover .project-img img {
